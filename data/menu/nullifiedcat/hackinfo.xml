@@ -1,0 +1,14 @@
+<Tab name="Inithook" padding="4 4 4 4">
+    <Box height="content" width="content" padding="12 6 6 6" name="Initalizedhook">
+        <List width="150">
+            <AutoVariable width="fill" target="hack.enable" label="Enable Initalizedhook"/>
+            <AutoVariable width="fill" target="hack.log-console" label="Log Debug Info"/>
+            <AutoVariable width="fill" target="hack.log-file" label="Log Debug File"/>
+            <AutoVariable width="fill" target="hack-info.enable" label="Enable Initalizedhook label"/>
+            <AutoVariable width="fill" target="hack-info.x" label="X position"/>
+            <AutoVariable width="fill" target="hack-info.y" label="Y position"/>
+            <AutoVariable width="fill" target="hack-info.size" label="Size"/>
+            <AutoVariable width="fill" target="hack-info.alpha" label="Transparency"/>
+        </List>
+    </Box>
+</Tab>

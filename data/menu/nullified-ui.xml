@@ -1,0 +1,18 @@
+<ElementGroup>
+    <Window x="1040" y="215" name="Main Window" width="content" height="content">
+        <TabContainer width="650" height="425">
+            <Include path="nullifiedcat/aimbot.xml"/>
+            <Include path="nullifiedcat/nospread.xml"/>
+            <Include path="nullifiedcat/triggerbot.xml"/>
+            <Include path="nullifiedcat/antiaim.xml"/>
+            <Include path="nullifiedcat/chat.xml"/>
+            <Include path="nullifiedcat/crits.xml"/>
+            <Include path="nullifiedcat/visuals.xml"/>
+            <Include path="nullifiedcat/movement.xml"/>
+            <Include path="nullifiedcat/warp.xml"/>
+            <Include path="nullifiedcat/misc.xml"/>
+            <Include path="nullifiedcat/hackinfo.xml"/>
+            <Include path="nullifiedcat/debug.xml"/>
+        </TabContainer>
+    </Window>
+</ElementGroup>

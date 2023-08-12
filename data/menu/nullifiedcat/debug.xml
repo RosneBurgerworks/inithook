@@ -1,0 +1,25 @@
+<Tab name="Debug" padding="4 4 4 4">
+    <Box padding="12 6 6 6" width="content" height="content" name="Debug">
+        <List width="200">
+            <AutoVariable width="fill" target="aimbot.debug" label="Debug Aimbot"/>
+            <AutoVariable width="fill" target="aimbot.debug.engine-pp" label="Debug Engine PP"/>
+            <AutoVariable width="fill" target="crit.desync-debug" label="Debug Crits"/>
+            <AutoVariable width="fill" target="auto-item.debug" label="Debug Autoitem"/>
+            <AutoVariable width="fill" target="debug.cursor-fix" label="Cursofix"/>
+            <AutoVariable width="fill" target="debug.engine-pred-others" label="Engine pred others"/>
+            <AutoVariable width="fill" target="debug.fast-vischeck" label="Fast vischeck"/>
+            <AutoVariable width="fill" target="debug.join-wait-time" label="Joinspam wait time"/>
+            <AutoVariable width="fill" target="debug.log-dispatch-user-msg" label="Log dispatched User messages"/>
+            <AutoVariable width="fill" target="debug.log-sent-chat" label="Log sent Chat"/>
+            <AutoVariable width="fill" target="debug.pp-extrapolate" label="PP extrapolate"/>
+            <AutoVariable width="fill" target="debug.pp-bsearch" label="PP binary search"/>
+            <AutoVariable width="fill" target="debug.pp-gravity" label="PP gravity"/>
+            <AutoVariable width="fill" target="debug.pp-ping-compensation" label="PP ping compensation"/>
+            <AutoVariable width="fill" target="debug.projectiles" label="Debug projectiles"/>
+            <AutoVariable width="fill" target="debug.tcm" label="Debug TCM"/>
+            <AutoVariable width="fill" target="debug.ve.averaging" label="VE Averaging"/>
+            <AutoVariable width="fill" target="debug.ve.smooth" label="VE Smooth"/>
+            <AutoVariable width="fill" target="debug.ve.window" label="VE Window"/>
+        </List>
+    </Box>
+</Tab>

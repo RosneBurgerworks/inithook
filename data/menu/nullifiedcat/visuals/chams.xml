@@ -1,0 +1,64 @@
+<Tab name="Chams">
+    <TabContainer width="fill" height="fill">
+        <Tab name="Chams" padding="4 4 4 4">
+            <Box padding="12 6 6 6" width="content" height="content" name="Chams">
+                <List width="200">
+                    <AutoVariable width="fill" target="chams.enable" label="Entity Chams" tooltip="Change textures for visiblity."/>
+                    <AutoVariable width="fill" target="chams.legit" label="Legit" tooltip="Don't show chams through walls."/>
+                    <AutoVariable width="fill" target="chams.health" label="Health" tooltip="Color chams according to player health."/>
+                    <AutoVariable width="fill" target="chams.recursive" label="Recursive"/>
+                    <AutoVariable width="fill" target="chams.novis" label="Seperate novis colors" tooltip="Seperate colors when a entity is not visible"/>
+                    <AutoVariable width="fill" target="chams.weapons" label="Weapon chams seperate color" tooltip="Color weapons."/>
+                    <AutoVariable width="fill" target="chams.overlay" label="Overlay entity chams" tooltip="Uses overlay colors"/>
+                    <AutoVariable width="fill" target="chams.original" label="Entity chams draw original"/>
+                    <AutoVariable width="fill" target="chams.alpha" label="Player chams alpha" tooltip="Player chams transparency."/>
+                </List>
+            </Box>
+            <Box padding="12 6 6 6" width="content" height="content" name="Backtrack chams" x="215" y="125">
+                <List width="200">
+                    <AutoVariable width="fill" target="backtrack.chams" label="Backtrack chams" tooltip="Draw chams for backtrack ticks"/>
+                    <AutoVariable width="fill" target="backtrack.chams.overlay" label="Overlay backtrack chams"/>
+                    <AutoVariable width="fill" target="backtrack.chams.wireframe" label="Backtrack chams wireframe"/>
+                    <AutoVariable width="fill" target="backtrack.chams.ticks" label="Backtrack chams amount" tooltip="How many ticks to draw (WARNING, this can cause lag)"/>
+                </List>
+            </Box>
+            <Box padding="12 6 6 6" width="content" height="content" name="Targets" y="160">
+                <List width="200">
+                    <AutoVariable width="fill" target="chams.show.players" label="Players"/>
+                    <AutoVariable width="fill" target="chams.show.teammates" label="Teammates"/>
+                    <AutoVariable width="fill" target="chams.show.disguised" label="Disguised"/>
+                    <AutoVariable width="fill" target="chams.self" label="Local Player"/>
+                    <AutoVariable width="fill" target="chams.show.buildings" label="Buildings"/>
+                    <AutoVariable width="fill" target="chams.show.teammate-buildings" label="Team buildings"/>
+                    <AutoVariable width="fill" target="chams.show.powerups" label="Powerups"/>
+                    <AutoVariable width="fill" target="chams.show.stickies" label="Stickies"/>
+                    <AutoVariable width="fill" target="chams.show.stickies.local" label="Local Stickies"/>
+                    <AutoVariable width="fill" target="chams.show.pipes" label="Pipes"/>
+                    <AutoVariable width="fill" target="chams.show.pipes.local" label="Local Pipes"/>
+                    <AutoVariable width="fill" target="chams.show.ammoboxes" label="Ammo boxes"/>
+                    <AutoVariable width="fill" target="chams.show.medkits" label="Health packs"/>
+                    <AutoVariable width="fill" target="chams.show.intel" label="Intel"/>
+                </List>
+            </Box>
+            <Box padding="12 6 6 6" width="content" height="content" name="Colors" x="215">
+                <List width="200">
+                    <AutoVariable width="fill" target="chams.weapons.basecolor" label="Base weapons color" tooltip="Chams base texture color."/>
+                    <AutoVariable width="fill" target="chams.weapons.overlaycolor" label="Overlay weapons color" tooltip="Chams base texture color."/>
+                    <AutoVariable width="fill" target="chams.overlay.overlaycolor.blu" label="Blu overlay" tooltip="Chams overlay texture color."/>
+                    <AutoVariable width="fill" target="chams.overlay.overlaycolor.red" label="Red overlay" tooltip="Chams overlay texture color."/>
+                    <AutoVariable width="fill" target="backtrack.chams.color" label="Backtrack chams color" tooltip="Color for the chams."/>
+                    <AutoVariable width="fill" target="backtrack.chams.color.overlay" label="Backtrack chams overlay color"/>
+                </List>
+            </Box>
+            <Box padding="12 6 6 6" width="content" height="content" name="Colors (NoVis)" x="430">
+                <List width="130">
+                    <AutoVariable width="fill" target="chams.novis.red" label="Red team"/>
+                    <AutoVariable width="fill" target="chams.novis.blu" label="Blu team"/>
+                    <AutoVariable width="fill" target="chams.novis.overlay.overlaycolor.blu" label="Blu overlay" tooltip="Chams overlay texture color."/>
+                    <AutoVariable width="fill" target="chams.novis.overlay.overlaycolor.red" label="Red overlay" tooltip="Chams overlay texture color."/>
+                </List>
+            </Box>
+        </Tab>
+        <Include path="nullifiedcat/visuals/chamshaders.xml"/>
+    </TabContainer>
+</Tab>

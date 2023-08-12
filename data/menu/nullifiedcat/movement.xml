@@ -1,0 +1,67 @@
+<Tab name="Movement" padding="6 6 6 6">
+    <Box padding="12 6 6 6" width="content" height="content" name="NavBot">
+        <List width="150">
+            <AutoVariable width="fill" target="nav.enabled" label="Enable pathing"/>
+            <AutoVariable width="fill" target="nav.draw" label="Draw path"/>
+            <AutoVariable width="fill" target="nav.look-at-path" label="Look at path"/>
+            <AutoVariable width="fill" target="navbot.enabled" label="Enable NavBot"/>
+            <AutoVariable width="fill" target="navbot.capture-objectives" label="Capture objectives" tooltip="Automatically capture objectives (CTF,CP and PL only)"/>
+            <AutoVariable width="fill" target="navbot.defend-intel" label="Defend intel" tooltip="Defend our intel when its dropped or stolen"/>
+            <AutoVariable width="fill" target="navbot.engineer-mode" label="Engineer mode"/>
+            <AutoVariable width="fill" target="navbot.search-health" label="Search health"/>
+            <AutoVariable width="fill" target="navbot.search-ammo" label="Search ammo"/>
+            <AutoVariable width="fill" target="navbot.escape-danger" label="Escape danger"/>
+            <AutoVariable width="fill" target="navbot.escape-danger.slight-danger.capping" label="Safe capping" tooltip="Make bots run pre-emptively from capture points in case of danger"/>
+            <AutoVariable width="fill" target="navbot.proximity-blacklist.dormant" label="Danger dormant" tooltip="Count dormant players as dangers"/>
+            <AutoVariable width="fill" target="navbot.escape-danger.ctf-cap" label="Escape danger w. intel" tooltip="Also try to escape from danger when carrying intel."/>
+            <!--AutoVariable width="fill" target="navbot.spy-mode" label="Enable Spy mode"/>
+            <AutoVariable width="fill" target="navbot.other-mode" label="General mode"/-->
+            <AutoVariable width="fill" target="navbot.primary-only" label="Best weapon only"/>
+            <AutoVariable width="fill" target="navbot.allow-melee" label="Melee mode" tooltip="Allow navbot to use melee weapon"/>
+            <AutoVariable width="fill" target="navbot.autojump.enabled" label="Enable autojump"/>
+            <AutoVariable width="fill" target="navbot.autojump.trigger-distance" label="Jump distance"/>
+            <AutoVariable width="fill" target="navbot.snipe-sentries" label="Try to target sentries"/>
+            <AutoVariable width="fill" target="navbot.snipe-sentries.shortrange" label="Scout/Pyro sentry mode" tooltip="Try to target sentries as scout/pyro aswell. Usually not recommended."/>
+            <AutoVariable width="fill" target="navbot.stay-near" label="Stalk enemies" tooltip="Try to outrange as sniper and close distance as scout/heavy"/>
+            <!-- <!AutoVariable width="fill" target="navbot.take-teleporters" label="take teleporters"/> -->
+        </List>
+    </Box>
+    <Box padding="12 6 6 6" width="content" height="content" name="FollowBot" x="170">
+        <List width="180">
+            <AutoVariable width="fill" target="follow-bot.enable" label="Enable FollowBot" tooltip="Automatically follow other players"/>
+            <AutoVariable width="fill" target="follow-bot.roaming" label="Roaming" tooltip="Look for someone to follow when there is not active target."/>
+            <AutoVariable width="fill" target="follow-bot.change-roaming-target" label="Change when possible" tooltip="Allows more changing of follow targets"/>
+            <AutoVariable width="fill" target="follow-bot.jump-if-stuck" label="Jump if stuck"/>
+            <AutoVariable width="fill" target="follow-bot.taunt-sync" label="Synced taunts" tooltip="Taunt when follow target taunts."/>
+            <AutoVariable width="fill" target="follow-bot.max-range" label="Activation Range" tooltip="Max distance to follow a target"/>
+            <AutoVariable width="fill" target="follow-bot.distance" label="Follow distance" tooltip="Distance to follow target"/>
+            <AutoVariable width="fill" target="follow-bot.ipc-distance" label="IRC additive distance"/>
+            <AutoVariable width="fill" target="follow-bot.mimic-slot" label="Mimic slot" tooltip="Mimic target's weapon slot."/>
+            <AutoVariable width="fill" target="follow-bot.mimic-crouch" label="Mimic crouch"/>
+            <AutoVariable width="fill" target="follow-bot.always-medigun" label="Always Medigun" tooltip="Always have the medigun out. Overrides mimic slot."/>
+            <AutoVariable width="fill" target="follow-bot.switch-afk" label="AFK switch"/>
+            <AutoVariable width="fill" target="follow-bot.afk-time" label="AFK limit" tooltip="Time a target must be AFK for to switch from them."/>
+            <AutoVariable width="fill" target="follow-bot.corners" label="Corner activate"/>
+            <AutoVariable width="fill" target="follow-bot.steamid" label="SteamID to follow" tooltip="Steamid of player to follow. Highest priority."/>
+            <AutoVariable width="fill" target="follow-bot.prioritize-leader" label="Prioritize the party leader" Tooltip="Second highest priority."/>
+            <AutoVariable width="fill" target="follow-bot.prioritize-friends" label="Prioritize friends" tooltip="Third highest priority."/>
+            <AutoVariable width="fill" target="follow-bot.draw-crumbs" label="Draw crumbs" tooltip="Draw follow path"/>
+        </List>
+    </Box>
+    <Box padding="12 6 6 6" width="content" height="content" name="Anti-Backstab" x="370">
+        <List width="180">
+            <AutoVariable width="fill" target="antibackstab.enable" label="Enable Anti-Backstab"/>
+            <AutoVariable width="fill" target="antibackstab.angle" label="Detection Angle"/>
+            <AutoVariable width="fill" target="antibackstab.distance" label="Detection Distance"/>
+            <AutoVariable width="fill" target="antibackstab.silent" label="Silent"/>
+            <AutoVariable width="fill" target="antibackstab.nope" label="Nope!"/>
+        </List>
+    </Box>
+    <Box padding="12 6 6 6" width="content" height="content" name="Movement" x="370" y="100">
+        <List width="180">
+            <AutoVariable width="fill" target="bunnyhop.enable" label="Enable Bunny Hop"/>
+            <AutoVariable width="fill" target="misc.autostrafe" label="Enable Auto strafe"/>
+            <AutoVariable width="fill" target="misc.no-push" label="No Push"/>
+        </List>
+    </Box>
+</Tab>

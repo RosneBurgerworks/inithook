@@ -1,0 +1,89 @@
+<Tab name="Collective" padding="4 4 4 4">
+    <Box height="content" width="content" padding="12 6 6 6">
+        <Box height="content" width="content" padding="12 6 6 6">
+            <List width="175">
+                <AutoVariable width="fill" target="misc.anti-afk" label="Enable Antiafk"/>
+                <AutoVariable width="fill" target="misc.auto-abandon" label="Enable Auto abandon"/>
+                <AutoVariable width="fill" target="misc.auto-balance-spam" label="Enable Auto balance spam"/>
+                <AutoVariable width="fill" target="misc.debug-info" label="Draw debug info"/>
+                <AutoVariable width="fill" target="misc.engine-prediction" label="Engine Prediction"/>
+                <AutoVariable width="fill" target="misc.flashlight-spam" label="Flashlight spam"/>
+                <AutoVariable width="fill" target="misc.force-halloween" label="Force Halloween"/>
+                <AutoVariable width="fill" target="misc.god-mode" label="xd"/>
+                <AutoVariable width="fill" target="misc.minigun-jump-tf2c" label="TF2C Minigun Jump"/>
+                <AutoVariable width="fill" target="misc.no-homo" label="#nohomo"/>
+                <AutoVariable width="fill" target="misc.roll-speedhack" label="Moonwalk"/>
+                <AutoVariable width="fill" target="misc.roll-speedhack.forward" label="Forward moonwalk"/>
+                <AutoVariable width="fill" target="misc.semi-auto" label="Semiauto Fire"/>
+                <LabeledObject width="fill" label="Skybox Override">
+                    <Select target="misc.skybox-override">
+                        <Option name="none" value="0"/>
+                        <Option name="sky_tf2_04" value="1"/>
+                        <Option name="sky_upward" value="2"/>
+                        <Option name="sky_dustbowl_01" value="3"/>
+                        <Option name="sky_goldrush_01" value="4"/>
+                        <Option name="sky_granary_01" value="5"/>
+                        <Option name="sky_well_01" value="6"/>
+                        <Option name="sky_gravel_01" value="7"/>
+                        <Option name="sky_badlands_01" value="8"/>
+                        <Option name="sky_hydro_01" value="9"/>
+                        <Option name="sky_night_01" value="10"/>
+                        <Option name="sky_nightfall_01" value="11"/>
+                        <Option name="sky_trainyard_01" value="12"/>
+                        <Option name="sky_stormfront_01" value="13"/>
+                        <Option name="sky_morningsnow_01" value="14"/>
+                        <Option name="sky_alpinestorm_01" value="15"/>
+                        <Option name="sky_harvest_01" value="16"/>
+                        <Option name="sky_harvest_night_01" value="17"/>
+                        <Option name="sky_halloween" value="18"/>
+                        <Option name="sky_halloween_night_01" value="19"/>
+                        <Option name="sky_halloween_night2014_01" value="20"/>
+                        <Option name="sky_island_01" value="21"/>
+                        <Option name="sky_jungle_01" value="22"/>
+                        <Option name="sky_invasion2fort_01" value="23"/>
+                        <Option name="sky_well_02" value="24"/>
+                        <Option name="sky_outpost_01" value="25"/>
+                        <Option name="sky_coastal_01" value="26"/>
+                        <Option name="sky_rainbow_01" value="27"/>
+                        <Option name="sky_badlands_pyroland_01" value="28"/>
+                        <Option name="sky_pyroland_01" value="29"/>
+                        <Option name="sky_pyroland_02" value="30"/>
+                        <Option name="sky_pyroland_03" value="31"/>
+                    </Select>
+                </LabeledObject>
+                <AutoVariable width="fill" target="misc.tauntslide" label="Tauntslide"/>
+                <AutoVariable width="fill" target="misc.tauntslide-tf2c" label="TF2C Tauntslide"/>
+                <AutoVariable width="fill" target="misc.show-spectators" label="Show spectators"/>
+                <AutoVariable width="fill" target="misc.show-spectators.x" label="Position (X)"/>
+                <AutoVariable width="fill" target="misc.show-spectators.y" label="Position (Y)"/>
+                <AutoVariable width="fill" target="mvmtools.instant-revive" label="MVM Instant revive"/>
+                <AutoVariable width="fill" target="mvmtools.auto-f4" label="Auto F4"/>
+            </List>
+            <List width="175" x="187">
+                <AutoVariable width="fill" target="noisemaker-spam.enable" label="Noisemaker spam"/>
+                <AutoVariable width="fill" target="online.enable" label="Enable cathook online"/>
+                <AutoVariable width="fill" target="killstreak.enable" label="Enable Killstreak"/>
+            </List>
+        </Box>
+        <Box name="Identify" width="content" height="content" padding="12 6 6 6" x="380">
+            <List width="150">
+                <AutoVariable width="fill" target="identify.send" label="Send Drawline"/>
+                <AutoVariable width="fill" target="identify.recognize" label="Recognize Drawline"/>
+                <AutoVariable width="fill" target="identify.recognize.reply" label="Reply"/>
+                <AutoVariable width="fill" target="identify.time" label="Identify Delay"/>
+                <AutoVariable width="fill" target="identify.value" label="Identify Value"/>
+                <AutoVariable width="fill" target="identify.reply_value" label="Reply Value"/>
+                <AutoVariable width="fill" target="identify.auth" label="Auth Value"/>
+                <AutoVariable width="fill" target="identify.upstream-compatibility" label="Upstream compatibility" tooltip="Force send with upstream auth message also if applicable"/>
+            </List>
+        </Box>
+        <Box name="Rich presence editor" width="content" height="content" padding="12 6 6 6" x="380" y="150">
+            <List width="150">
+                <AutoVariable width="fill" target="misc.rich-presence" label="Enable"/>
+                <AutoVariable width="fill" target="misc.rich-presence.file-name" label="Filename" tooltip="For the message that comes after 'Special Event -'"/>
+                <AutoVariable width="fill" target="misc.rich-presence.party_size" label="Party size"/>
+                <AutoVariable width="fill" target="misc.rich-presence.delay" label="Delay (ms)"/>
+            </List>
+        </Box>
+    </Box>
+</Tab>

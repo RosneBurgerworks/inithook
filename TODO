@@ -1,0 +1,4 @@
+- Better fix for SDL being used with visuals disabled
+- Separate autoreporting from CatBot
+- Allow argument passing in hook callbacks (this will allow to modularize more code)
+- Get rid of boost

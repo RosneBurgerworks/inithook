@@ -1,0 +1,125 @@
+<Tab name="Utilities" padding="4 4 4 4">
+    <Box name="Autojoin" width="content" height="content" padding="12 6 6 6">
+        <List width="200">
+            <AutoVariable width="fill" target="autojoin.auto-queue" label="Auto Queue"/>
+            <AutoVariable width="fill" target="autojoin.auto-requeue" label="Auto requeue"/>
+            <AutoVariable width="fill" target="autojoin.no-autojoin" label="No Autojoin"/>
+            <AutoVariable width="fill" target="autojoin.no-autojoin.store_invites" label="Store Invites"/>
+            <AutoVariable width="fill" target="autojoin.no-autojoin.store_invites.lite" label="Lite Mode"/>
+            <AutoVariable width="fill" target="autojoin.accept_invites" label="Accept Invites"/>
+            <AutoVariable width="fill" target="autoqueue.mode" label="Autoqueue Mode" min="0" max="12"/>
+            <AutoVariable width="fill" target="autojoin.team" label="Autojoin Team" min="0" max="1"/>
+            <LabeledObject width="fill" label="Autojoin Class">
+                <Select target="autojoin.class">
+                    <Option name="None" value="0"/>
+                    <Option name="Scout" value="1"/>
+                    <Option name="Sniper" value="2"/>
+                    <Option name="Soldier" value="3"/>
+                    <Option name="Demoman" value="4"/>
+                    <Option name="Medic" value="5"/>
+                    <Option name="Heavy" value="6"/>
+                    <Option name="Pyro" value="7"/>
+                    <Option name="Spy" value="8"/>
+                    <Option name="Engineer" value="9"/>
+                </Select>
+            </LabeledObject>
+            <AutoVariable width="fill" target="shutdown.disconnect-reason" label="Disconnect reason"/>
+            <AutoVariable width="fill" target="shutdown.die-if-vac" label="Crash on VAC"/>
+            <AutoVariable width="fill" target="shutdown.abandon-on-mm-fail" label="Abandon on GC failure"/>
+        </List>
+    </Box>
+    <Box name="Autotaunt" width="content" height="content" padding="12 6 6 6" y="203">
+        <List width="200">
+            <AutoVariable width="fill" target="autotaunt.enable" label="Autotaunt enabled"/>
+            <LabeledObject width="fill" label="Autotaunt weapon">
+                <Select target="autotaunt.auto-weapon">
+                    <Option name="None" value="0"/>
+                    <Option name="Primary" value="1"/>
+                    <Option name="Secondary" value="2"/>
+                    <Option name="Melee" value="3"/>
+                    <Option name="Disguise Kit" value="4"/>
+                    <Option name="PDA" value="4"/>
+                    <Option name="Destruction PDA" value="5"/>
+                </Select>
+            </LabeledObject>
+            <AutoVariable width="fill" target="autotaunt.chance" label="Autotaunt chance" min="0" max="100"/>
+            <AutoVariable width="fill" target="autotaunt.safety-distance" label="Autotaunt safety distance"/>
+        </List>
+    </Box>
+    <Box height="content" width="content" padding="12 6 6 6" name="Extra" y="285">
+        <List width="200">
+            <AutoVariable width="fill" target="misc.backpack-expander.enabled" label="Expand backpack"/>
+            <AutoVariable width="fill" target="misc.backpack-expander.slot-count" label="Backpack slots" min="1" max="3000"/>
+        </List>
+    </Box>
+    <Box name="Bot-Utilities" width="content" height="content" padding="12 6 6 6" x="215">
+        <List width="200">
+            <AutoVariable width="fill" target="cat-bot.enable" label="Enable Utilities"/>
+            <AutoVariable width="fill" target="cat-bot.abandon-if.enable" label="Enable Abandon-if"/>
+            <AutoVariable width="fill" target="cat-bot.abandon-if.invite-required" label="Only abandon if invite"/>
+            <AutoVariable width="fill" target="cat-bot.abandon-if.bots-gte" label="Abandon if bots gte"/>
+            <AutoVariable width="fill" target="cat-bot.abandon-if.ipc-bots-gte" label="Abandon if IPC bots gte"/>
+            <AutoVariable width="fill" target="cat-bot.abandon-if.humans-lte" label="Abandon if humans lte"/>
+            <AutoVariable width="fill" target="cat-bot.abandon-if.players-lte" label="Abandon if players lte"/>
+            <AutoVariable width="fill" target="cat-bot.abandon-if.team-lte" label="Abandon if team Lte"/>
+            <AutoVariable width="fill" target="cat-bot.auto-crouch" label="Autocrouch"/>
+            <AutoVariable width="fill" target="cat-bot.mark-human-after-kills" label="Mark human after kills"/>
+            <AutoVariable width="fill" target="cat-bot.micspam.enable" label="Micspam"/>
+            <AutoVariable width="fill" target="cat-bot.micspam.interval-off" label="Micspam interval off"/>
+            <AutoVariable width="fill" target="cat-bot.micspam.interval-on" label="Micspam interval on"/>
+            <AutoVariable width="fill" target="cat-bot.always-crouch" label="Always crouch"/>
+            <AutoVariable width="fill" target="cat-bot.autoreport" label="Autoreport"/>
+            <AutoVariable width="fill" target="cat-bot.autoreport.interval" label="Autoreport Interval"/>
+            <AutoVariable width="fill" target="cat-bot.anti-autobalance" label="Anti auto balance"/>
+            <AutoVariable width="fill" target="misc.autodisguise" label="Autodisguise"/>
+            <AutoVariable width="fill" target="cat-bot.anti-motd" label="Anti MOTD"/>
+            <AutoVariable width="fill" target="cat-bot.autovote-map" label="Autovote for current map"/>
+        </List>
+    </Box>
+    <Box name="Name Utilities" width="content" height="content" padding="12 6 6 6" x="430">
+        <List width="200">
+            <AutoVariable width="fill" target="name.custom" label="Custom Name"/>
+            <AutoVariable width="fill" target="name.ipc" label="IPC Name"/>
+            <AutoVariable width="fill" target="name.random-name" label="Random Name"/>
+            <Box name="Namesteal" width="content" height="content" padding="12 6 6 6">
+                <List width="180">
+                    <LabeledObject width="fill" label="Namesteal">
+                        <Select target="name.namesteal">
+                            <Option name="Disabled" value="0"/>
+                            <Option name="Passive" value="1"/>
+                            <Option name="Active" value="2"/>
+                        </Select>
+                    </LabeledObject>
+                    <AutoVariable width="fill" target="name.namesteal.friendly" label="Teammates only" tooltip="Only steal teammate names"/>
+                    <AutoVariable width="fill" target="name.namesteal.preserve" label="Preserve Name" tooltip="Don't switch to steam name"/>
+                    <AutoVariable width="fill" target="name.namesteal.f2p-priority" label="Prioritize F2P" tooltip="Prioritize F2P over normal targets"/>
+                    <AutoVariable width="fill" target="name.namesteal.preserve.aggressive" label="Rejoin when needed" tooltip="Retry to switch names when needed, only runs in passive mode and on level 0 accs"/>
+                    <AutoVariable width="fill" target="name.namesteal.wait" label="Namesteal timer" tooltip="Time between namesteals (Seconds)"/>
+                    <AutoVariable width="fill" target="name.namesteal.format.random-pos" label="Randomize Location" tooltip="Randomize format char location (200F/202C stable)"/>
+                    <AutoVariable width="fill" target="name.namesteal.format" label="Format char" tooltip="Invisible character to insert"/>
+                </List>
+            </Box>
+        </List>
+    </Box>
+    <Box name="Vote Utilities" width="content" height="content" padding="12 6 6 6" x="430" y="200">
+        <List width="200">
+            <AutoVariable width="fill" target="votekicks.enabled" label="Votekick"/>
+            <LabeledObject width="fill" label="Votekicks Mode">
+                <Select target="votekicks.mode">
+                    <Option name="Smart" value="0"/>
+                    <Option name="Random" value="1"/>
+                    <Option name="Sequential" value="2"/>
+                </Select>
+            </LabeledObject>
+            <AutoVariable width="fill" target="votekicks.timer" label="Votekick Timer"/>
+            <AutoVariable width="fill" target="votekicks.min-team-size" label="Min. Team Size"/>
+            <AutoVariable width="fill" target="votekicks.maintain-majority-only" label="Maintain Majority"/>
+            <AutoVariable width="fill" target="votekicks.rage-only" label="Rage Only"/>
+            <AutoVariable width="fill" target="votekicks.f2p-only" label="F2P Only"/>
+            <AutoVariable width="fill" target="votekicks.prioritize.rage" label="Prioritize Rage"/>
+            <AutoVariable width="fill" target="votekicks.prioritize.namesteal" label="Prioritize Namesteal"/>
+            <AutoVariable width="fill" target="votekicks.prioritize.previous" label="Prioritize Previous"/>
+            <AutoVariable width="fill" target="votekicks.prioritize.highest-score" label="Prioritize Score"/>
+        </List>
+    </Box>
+</Tab>

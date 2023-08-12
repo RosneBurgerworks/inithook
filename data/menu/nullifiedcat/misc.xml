@@ -1,0 +1,9 @@
+<Tab name="Misc">
+    <TabContainer width="fill" height="fill">
+        <Include path="nullifiedcat/misc/autoitem.xml"/>
+        <Include path="nullifiedcat/misc/spyalert.xml"/>
+        <Include path="nullifiedcat/misc/collective.xml"/>
+        <Include path="nullifiedcat/misc/utilities.xml"/>
+        <Include path="nullifiedcat/misc/datacenters.xml"/>
+    </TabContainer>
+</Tab>

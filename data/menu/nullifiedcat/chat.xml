@@ -1,0 +1,160 @@
+<Tab name="Chat" padding="4 4 4 4">
+    <Box padding="12 6 6 6" width="content" height="content" name="Chat Spam">
+        <List width="150">
+            <LabeledObject width="fill" label="Spam Mode">
+                <Select target="spam.source">
+                    <Option name="Disable" value="0"/>
+                    <Option name="Custom" value="1"/>
+                    <Option name="Default" value="2"/>
+                    <Option name="Lennyfaces" value="3"/>
+                    <Option name="Newlines" value="4"/>
+                    <Option name="Nullcore" value="5"/>
+                    <Option name="Lmaobox" value="6"/>
+                    <Option name="Lithium" value="7"/>
+                </Select>
+            </LabeledObject>
+            <AutoVariable width="fill" target="spam.filename" label="Custom Spam"/>
+            <AutoVariable width="fill" target="spam.random" label="Randomize"/>
+            <AutoVariable width="fill" target="spam.delay" label="Spam Delay"/>
+            <AutoVariable width="fill" target="spam.teamchat" label="Spam in teamchat"/>
+            <Box name="IPC Coordination" width="content" height="content" padding="12 6 6 6">
+                <List width="140">
+                    <AutoVariable width="fill" target="spam.ipc-coordination" label="Enabled" tooltip="Take turn spamming between ipc peers in your party to avoid rate limit"/>
+                    <AutoVariable width="fill" target="spam.ipc-coordination.dynamic-delay" label="Dynamic delay" tooltip="Delay between spam is determined by party size automatically (8 seconds / size)"/>
+                </List>
+            </Box>
+        </List>
+    </Box>
+    <Box name="Voice spam" width="content" height="content" padding="12 6 6 6" y="150">
+        <List width="150">
+            <LabeledObject width="fill" label="Voice spam" tooltip="Spam character voicelines.">
+                <Select target="spam.voicecommand">
+                    <Option name="Disable" value="0"/>
+                    <Option name="Random" value="1"/>
+                    <Option name="Medic" value="2"/>
+                    <Option name="Thanks" value="3"/>
+                    <Option name="Go Go Go" value="4"/>
+                    <Option name="Move Up" value="5"/>
+                    <Option name="Go Left" value="6"/>
+                    <Option name="Go Right" value="7"/>
+                    <Option name="Yes" value="8"/>
+                    <Option name="Nope" value="9"/>
+                    <Option name="Incoming" value="10"/>
+                    <Option name="Spy" value="11"/>
+                    <Option name="Sentry Ahead" value="12"/>
+                    <Option name="Teleporter Here" value="13"/>
+                    <Option name="Dispenser Here" value="14"/>
+                    <Option name="Sentry Here" value="15"/>
+                    <Option name="Activate Charge" value="16"/>
+                    <Option name="Help" value="17"/>
+                    <Option name="Battle Cry" value="18"/>
+                    <Option name="Cheers" value="19"/>
+                    <Option name="Jeers" value="20"/>
+                    <Option name="Positive" value="21"/>
+                    <Option name="Negative" value="22"/>
+                    <Option name="Nice Shot" value="23"/>
+                    <Option name="Nice Job" value="24"/>
+                </Select>
+            </LabeledObject>
+        </List>
+    </Box>
+    <Box padding="12 6 6 6" width="content" height="content" name="Chat Log" y="185">
+        <List width="150">
+            <AutoVariable width="fill" target="chat-log.enable" label="Enable Chat Log"/>
+            <AutoVariable width="fill" target="chat-log.no-ipc" label="Ignore IPC"/>
+            <AutoVariable width="fill" target="chat-log.no-spam" label="Anti Spam"/>
+        </List>
+    </Box>
+    <Box name="Chat Censor" width="content" height="content" padding="12 6 6 6" y="250">
+        <List width="150">
+            <AutoVariable width="fill" target="chat.censor.enable" label="Enable Chat Censor"/>
+            <AutoVariable width="fill" target="chat.censor.namechange" label="Censor Namechanges"/>
+            <AutoVariable width="fill" target="chat.censor.class" label="Censor Class"/>
+            <AutoVariable width="fill" target="chat.censor.words" label="Censor Words"/>
+            <AutoVariable width="fill" target="chat.censor.global-chat" label="Global chat"/>
+            <AutoVariable width="fill" target="chat.censor.filter" label="Filter"/>
+            <AutoVariable width="fill" target="chat.censor.remove_chars" label="Remove Chars" tooltip="Removes Chars When Filtering"/>
+            <AutoVariable width="fill" target="chat.censor.name_part_length" label="Name Length" tooltip="Number Of Letters In Your Name We Should Filter"/>
+        </List>
+    </Box>
+    <Box name="Killsay" width="177" height="content" padding="12 6 6 6" x="170">
+        <List width="150">
+            <LabeledObject width="fill" label="Killsay Mode">
+                <Select target="killsay.mode">
+                    <Option name="Disable" value="0"/>
+                    <Option name="Custom" value="1"/>
+                    <Option name="Default" value="2"/>
+                    <Option name="NCC - Offensive" value="3"/>
+                    <Option name="NCC - MLG" value="4"/>
+                </Select>
+            </LabeledObject>
+            <AutoVariable width="fill" target="killsay.file" label="Custom Killsay"/>
+            <AutoVariable width="fill" target="killsay.delay" label="Killsay Delay"/>
+            <Box name="Critsay" width="165" height="content" padding="12 6 6 6">
+                <List width="150">
+                    <LabeledObject width="fill" label="Critsay Mode">
+                        <Select target="critsay.mode">
+                            <Option name="Disable" value="0"/>
+                            <Option name="Custom" value="1"/>
+                            <Option name="Default" value="2"/>
+                        </Select>
+                    </LabeledObject>
+                    <AutoVariable width="fill" target="critsay.file" label="Custom Critsay"/>
+                    <AutoVariable width="fill" target="critsay.delay" label="Critsay Delay"/>
+                </List>
+            </Box>
+        </List>
+    </Box>
+    <Box name="Votelogger" width="177" height="content" padding="12 6 6 6" x="170" y="143">
+        <List width="150">
+            <AutoVariable width="fill" target="votelogger.autovote.yes" label="Autovote yes"/>
+            <AutoVariable width="fill" target="votelogger.autovote.no" label="Autovote no"/>
+            <AutoVariable width="fill" target="votelogger.autovote.wait" label="Autovote wait"/>
+            <AutoVariable width="fill" target="votelogger.autovote.wait.min" label="Wait min (ms)"/>
+            <AutoVariable width="fill" target="votelogger.autovote.wait.max" label="Wait max (ms)"/>
+            <AutoVariable width="fill" target="votelogger.autovote.no.rage" label="Kick RAGE status"/>
+            <AutoVariable width="fill" target="votelogger.chat" label="Log votes" tooltip="Shows you new votekicks in your personal chat."/>
+            <AutoVariable width="fill" target="votelogger.chat.partysay" label="Log votes to party"/>
+            <AutoVariable width="fill" target="votelogger.chat.partysay.result" label="Log votes result to party"/>
+            <AutoVariable width="fill" target="votelogger.chat.casts" label="Log casts" tooltip="Also log individual vote casts (F1/F2)"/>
+            <AutoVariable width="fill" target="votelogger.chat.partysay.casts" label="Log casts to party" tooltip="Also log individual vote casts (F1/F2)"/>
+            <AutoVariable width="fill" target="votelogger.chat.casts.f1-only" label="Log F1 casts only" tooltip="Log exclusively F1 casts."/>
+            <AutoVariable width="fill" target="votelogger.abandon-before-kick" label="Abandon before kick"/>
+            <AutoVariable width="fill" target="votelogger.leave-after-local-vote" label="Abandon after local vote"/>
+        </List>
+    </Box>
+    <Box name="Uber Spam" width="content" height="content" padding="12 6 6 6" x="352">
+        <List width="150">
+            <LabeledObject width="fill" label="Source">
+                <Select target="uberspam.source">
+                    <Option name="Disable" value="0"/>
+                    <Option name="Default" value="1"/>
+                    <Option name="Null Core" value="2"/>
+                    <Option name="Custom" value="3"/>
+                </Select>
+            </LabeledObject>
+            <AutoVariable width="fill" target="uberspam.file" label="Custom Spam"/>
+            <AutoVariable width="fill" target="uberspam.team-chat" label="Team Chat"/>
+            <AutoVariable width="fill" target="uberspam.triggers.ended" label="Uber End"/>
+            <AutoVariable width="fill" target="uberspam.triggers.ready" label="Uber Ready"/>
+            <AutoVariable width="fill" target="uberspam.triggers.used" label="Uber Used"/>
+            <AutoVariable width="fill" target="uberspam.triggers.every-n-percent" label="Every %"/>
+        </List>
+    </Box>
+    <Box name="Misc" width="content" height="content" padding="12 6 6 6" x="352" y="130">
+        <List width="150">
+            <AutoVariable width="fill" target="chat.clean" label="Clean Chat"/>
+            <AutoVariable width="fill" target="chat.clean.empty" label="Clean Empty Chat"/>
+            <AutoVariable width="fill" target="chat.crypto" label="Crypto Chat"/>
+            <AutoVariable width="fill" target="chat.prefix-newlines" label="Newlines"/>
+            <AutoVariable width="fill" target="log.hurt" label="Log Hurt Events"/>
+            <AutoVariable width="fill" target="log.joining" label="Log Join Events"/>
+            <AutoVariable width="fill" target="log.connect" label="Log Connect Events"/>
+            <AutoVariable width="fill" target="log.disconnect" label="Log Disconnect Events"/>
+            <AutoVariable width="fill" target="log.team" label="Log Team join Events"/>
+            <AutoVariable width="fill" target="log.death" label="Log Death Events"/>
+            <AutoVariable width="fill" target="log.spawn" label="Log (re)Spawn Events"/>
+            <AutoVariable width="fill" target="log.changeclass" label="Log Class Change Events"/>
+        </List>
+    </Box>
+</Tab>

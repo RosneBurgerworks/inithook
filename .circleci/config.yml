@@ -1,0 +1,14 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: nullworks/cathook-docker-ci-arch:latest
+    steps:
+      - checkout
+      - run:
+          name: "Compiling cathook and textmode cathook"
+          command: git submodule sync; git submodule update --init; mkdir obj; cd obj; cmake -DInternal_Binarymode=1 ..; make -j8; mkdir /tmp/artifacts; cp bin/libcathook.so /tmp/artifacts/libcathook.so; cd ..; rm -rf obj/; mkdir obj; cd obj; cmake -DEnableVisuals=0 -DTextmode=1 -DVACBypass=1 -DEnableNullGraphics=1 -DInternal_Binarymode=1 ..; make -j8; mkdir /tmp/artifacts-textmode; cp bin/libcathook.so /tmp/artifacts-textmode/libcathook-textmode.so
+      - store_artifacts:
+          path: /tmp/artifacts/libcathook.so
+      - store_artifacts:
+          path: /tmp/artifacts-textmode/libcathook-textmode.so

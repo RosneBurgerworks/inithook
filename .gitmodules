@@ -1,0 +1,17 @@
+[submodule "source-sdk-2013-headers"]
+	path = external/source-sdk-2013-headers
+	url = https://github.com/nullworks/source-sdk-2013-headers
+[submodule "libxoverlay"]
+	path = external/libxoverlay
+	url = https://github.com/nullworks/libxoverlay
+[submodule "simple-ipc"]
+	path = external/simple-ipc
+	url = https://github.com/aUniqueUser/simple-ipc
+	branch = l0fg
+[submodule "external/MicroPather"]
+	path = external/MicroPather
+	url = https://github.com/hwgs/MicroPather
+	branch = hwgs
+[submodule "external/TF2_NavFile_Reader"]
+	path = external/TF2_NavFile_Reader
+	url = https://github.com/nullworks/TF2_NavFile_Reader
